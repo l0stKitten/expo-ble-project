@@ -1,0 +1,28 @@
+npx create-expo-app -t expo-template-blank-typescript expo-ble-project
+
+npm install @react-navigation/native
+npx expo install react-native-screens react-native-safe-area-context
+npm install @react-navigation/native-stack
+npm install @react-navigation/material-bottom-tabs react-native-paper react-native-vector-icons
+npx expo install react-native-ble-plx
+npx expo install @shopify/react-native-skia
+npm install --save-dev @types/react-native-vector-icons
+npm install react-native-paper-dates --save
+
+----- DANGER -------
+npx expo install expo-device react-native-base64
+npx expo prebuild
+npx expo install expo-dev-client
+npm install -g expo-cli
+npx npm install -g eas-cli
+npx npm install eas-cli
+npx expo install react-native-ble-plx @config-plugins/react-native-ble-plx
+
+Set-ExecutionPolicy RemoteSigned
+eas build --profile development --platform android
+Set-ExecutionPolicy Restricted
+C:\Users\USUARIO\Documents\La Salle Temp\VIII Semestre\Seminario de Tecnología I\expo-ble-project\keystore.jks
+keystore password: 12345678
+key alias: keyalias
+key password: 12345678
+----- DANGER -------
